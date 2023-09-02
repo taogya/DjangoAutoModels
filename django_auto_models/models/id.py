@@ -14,6 +14,7 @@ class AutoIDModel(models.Model):
     """ explicit declaration with AutoField """
 
     id = models.AutoField(
+        auto_created=True,
         verbose_name=_('ID'),
         editable=False,
         serialize=False,
@@ -27,6 +28,7 @@ class AutoBigIDModel(models.Model):
     """ explicit declaration with BigAutoField """
 
     id = models.BigAutoField(
+        auto_created=True,
         verbose_name=_('ID'),
         editable=False,
         serialize=False,
@@ -40,6 +42,7 @@ class AutoUUIDModel(models.Model):
     """ swap id from (Big)AutoFiled to UUIDField """
 
     id = models.UUIDField(
+        auto_created=True,
         verbose_name=_('UUID'),
         editable=False,
         serialize=False,
