@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-auto-models"
+version = "1.0.0"
+authors = [
+  { name="Taogya", email="132679709+taogya@users.noreply.github.com" },
+]
+description = "Models with auto input fields for Django"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+]
+dependencies = [
+]
+[tool.hatch.build]
+include = [
+    "django_auto_models/*",
+]
+exclude = [
+    "build",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/taogya/DjangoAutoModels"
+"Bug Tracker" = "https://github.com/taogya/DjangoAutoModels/issues"
